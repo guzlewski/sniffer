@@ -41,6 +41,3 @@ By defalut all options are enabled.
 
 ### Example
  `` sudo ./sniffer.out eth0 -e4t ``
-
-## License
-Copyright (c) Michał Guźlewski. All rights reserved.
