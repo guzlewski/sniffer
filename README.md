@@ -1,18 +1,16 @@
 # sniffer
-Simple network sniffer written in C. 
+Simple network sniffer wrote in C. 
 
-## Implemented protools
- * Etherent Frame
+## Implemented protocols
+* Ethernet Frame
     * ARP
-   *  IP4
-        *  ICMP
+    * IP4
+        * ICMP
         * TCP
         * UDP
-             * DHCP
+            * DHCP
     * IP6
         * ICMP6
-
-
 
 ## Compilation
 ```bash
@@ -22,11 +20,10 @@ make
 ```
 
 ## Usage
-Program needs root privileges to run.
-
+Sniffer needs root privileges to run.
 ```
-./sniffer.out [INTERFACE] [OPTIONS]
-Avaible options:
+./sniffer.out INTERFACE [options]
+Available options:
         -a - ARP
         -d - DHCP
         -e - Ethernet Frame
@@ -36,8 +33,10 @@ Avaible options:
         -6 - IP6
         -t - TCP
         -u - UDP
-By defalut all options are enabled.
+By default all options are enabled.
 ```
 
-### Example
- `` sudo ./sniffer.out eth0 -e4t ``
+## Example
+```
+sudo ./sniffer.out eth0 -e4t
+```

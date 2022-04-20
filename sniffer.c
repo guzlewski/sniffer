@@ -61,8 +61,8 @@ int main(int argc, char **argv)
 	if (argc < 2)
 	{
 		printf("Usage:\n");
-		printf("\t%s [INTERFACE] [OPTIONS]\n\n", argv[0]);
-		printf("Avaible options:\n");
+		printf("\t%s INTERFACE [options]\n\n", argv[0]);
+		printf("Available options:\n");
 		printf("\t-a - ARP\n");
 		printf("\t-d - DHCP\n");
 		printf("\t-e - Ethernet Frame\n");
